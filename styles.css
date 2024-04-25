@@ -1,0 +1,397 @@
+body {
+  font-family: "Encode Sans", sans-serif;
+}
+
+.logo {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aba {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 0;
+}
+
+.aba::before,
+.aba::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: #f5f6f7;
+  transform: translateX(-50%);
+}
+
+.aba::before {
+  top: 0;
+}
+
+.aba::after {
+  bottom: 0;
+}
+
+.aba a {
+  margin-right: 88px;
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold;
+}
+
+.aba a:last-child {
+  margin-right: 0;
+}
+
+.aba a p {
+  margin: 0;
+  padding: 0;
+}
+
+.aba a:nth-child(1) p {
+  color: #c4160c;
+} /* g1 */
+.aba a:nth-child(2) p {
+  color: #1d4895;
+} /* o globo */
+.aba a:nth-child(3) p {
+  color: #006463;
+} /* valor */
+.aba a:nth-child(4) p {
+  color: #07a545;
+} /* ge */
+.aba a:nth-child(5) p {
+  color: #da6229;
+} /* cartola */
+.aba a:nth-child(6) p {
+  color: #f4254c;
+} /* globoplay */
+.aba a:nth-child(7) p {
+  color: #f671b4;
+} /* dropz */
+.aba a:nth-child(8) p {
+  color: #df7600;
+} /* gshow */
+.aba a:nth-child(9) p {
+  color: #313232;
+} /* quem */
+.aba a:nth-child(10) p {
+  color: #a81d83;
+} /* receitas */
+
+.content-wrapper {
+  width: 1250px;
+  margin: 0 auto;
+  position: relative; /* Permite um posicionamento absoluto para as colunas internas */
+}
+
+.column-right {
+  /* Ajuste a posição da coluna para a esquerda usando transform translate. */
+  transform: translateX(-123px);
+  border-left: 1px solid #ebedef; /* Adiciona uma borda à esquerda */
+  height: 800px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Isso deve ser mantido para evitar alterações no layout original */
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.column-main {
+  left: calc(
+    33% + 20px
+  ); /* Ajuste o valor percentual e o valor de pixels conforme necessário */
+  transform: translateX(-33%);
+}
+
+.div5 {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.conteudo {
+  position: relative;
+  top: 40px; /* Move a div 40 pixels para baixo em relação à sua posição original */
+}
+
+.div3 {
+  width: 300px;
+  height: 800px;
+}
+
+.div5 {
+  width: 300px;
+  height: 800px;
+
+  margin-left: 33px;
+}
+
+/* Certifique-se de que as colunas estão bem posicionadas para evitar sobreposições */
+.column-left,
+.column-main,
+.column-right {
+  width: 300px; /* Define a largura para evitar conflitos */
+}
+
+.column-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 662px;
+  height: 800px;
+  border-right: 1px solid #ebedef; /* Adiciona uma borda à direita */
+}
+
+.div1 a h1 {
+  width: 700px; /* Ajusta a largura para a mesma de div1 */
+  position: absolute; /* Posicionamento absoluto dentro de div1 */
+  left: 0; /* Alinha à esquerda da div1 */
+}
+
+.div1 a:nth-child(1) h1 {
+  font-size: 52px;
+  color: #c4160c;
+  top: 0; /* Posicionado no topo de div1 */
+  font-weight: bold; /* Aplica negrito ao texto */
+  line-height: 1.1; /* O valor pode ser um número sem unidade, como '1.6', ou um valor em pixels, como '60px'. */
+}
+
+.div1 a:nth-child(2) h1 {
+  font-size: 18px;
+  color: #303134;
+  top: 194px; /* Posiciona abaixo do primeiro h1 */
+  line-height: 1.8;
+  width: 580px; /* Ajuste essa largura conforme necessário para que o texto quebre onde você quer */
+  word-wrap: break-word; /* Garante que as palavras serão quebradas conforme a largura definida */
+}
+
+.div2 {
+  width: 620px;
+  height: 285px;
+  position: absolute;
+  top: 300px;
+  border-bottom: 1px solid #ebedef; /* Adiciona borda cinza abaixo da div2 */
+}
+
+.div1 {
+  padding-bottom: 275px; /* Isso adiciona um espaço abaixo do conteúdo da div1 antes da borda */
+  position: relative;
+}
+
+.div1::after {
+  content: ""; /* Necessário para criar um pseudo-elemento */
+  display: block; /* Faz com que se comporte como um bloco, permitindo definir largura e altura */
+  width: 620px; /* Define a largura da borda */
+  height: 1px; /* Altura da borda, no seu caso 1px */
+  background: #ebedef; /* Cor da borda */
+  position: absolute; /* Posiciona absolutamente em relação ao seu pai .div1 */
+  bottom: 0; /* Posiciona na parte inferior de .div1 */
+}
+
+.div4 {
+  width: 700px;
+  height: 260px;
+
+  position: absolute;
+  top: 600px; /* Abaixo de div2, incluindo algum espaçamento */
+}
+
+.div3 a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.div4 a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.div5 a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.noticia1 {
+  width: 192px; /* Define a largura da imagem */
+  height: 110px; /* Define a altura da imagem */
+  border-radius: 12px; /* Define as bordas arredondadas da imagem */
+  object-fit: cover; /* Garante que a imagem cubra o espaço definido sem distorção */
+}
+
+.div2 a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.div2 a:nth-child(2) h1 {
+  font-size: 14px;
+  color: #c4170c;
+  top: 0; /* Posicionado no topo de div1 */
+  line-height: 2.1;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.div2 a:nth-child(3) h1 {
+  font-size: 18px;
+  color: #2f3134;
+  top: 0;
+  line-height: 1.3;
+  font-weight: bold; /* Aplica negrito ao texto */
+  width: 180px; /* Ajuste essa largura conforme necessário para que o texto quebre onde você quer */
+  word-wrap: break-word; /* Garante que as palavras serão quebradas conforme a largura definida */
+}
+
+.div2 a:nth-child(4) h1 {
+  font-size: 13px;
+  color: #2f3134;
+  top: 0; /* Posicionado no topo de div1 */
+  line-height: 1.3;
+  width: 170px; /* Ajuste essa largura conforme necessário para que o texto quebre onde você quer */
+  word-wrap: break-word; /* Garante que as palavras serão quebradas conforme a largura definida */
+  margin-top: 8px;
+}
+
+.noticias-div2 {
+  display: flex;
+  justify-content: space-between; /* Isso irá distribuir o espaço disponível igualmente entre os elementos .noticias */
+}
+
+.noticia-igreja {
+  margin-right: 80px;
+}
+
+.div4 a:nth-child(1) h1 {
+  font-size: 14px;
+  color: #c4170c;
+  top: 0; /* Posicionado no topo de div1 */
+  line-height: 2.1;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.div4 a:nth-child(2) h1 {
+  font-size: 18px; /* Tamanho grande para o título principal */
+  color: #2f3134;
+  top: 0; /* Posicionado no topo de div1 */
+  line-height: 1.3;
+  font-weight: bold;
+  width: 180px; /* Ajuste essa largura conforme necessário para que o texto quebre onde você quer */
+  word-wrap: break-word; /* Garante que as palavras serão quebradas conforme a largura definida */
+}
+
+.div4 a:nth-child(3) h1 {
+  font-size: 13px;
+  color: #2f3134;
+  top: 0; /* Posicionado no topo de div1 */
+  line-height: 1.3;
+  width: 170px; /* Ajuste essa largura conforme necessário para que o texto quebre onde você quer */
+  word-wrap: break-word; /* Garante que as palavras serão quebradas conforme a largura definida */
+  margin-top: 8px;
+}
+
+.noticias-div4 {
+  display: flex;
+  justify-content: space-between; /* Isso irá distribuir o espaço disponível igualmente entre os elementos .noticias */
+}
+
+.noticia-caminhoneiro {
+  margin-right: 80px;
+}
+
+.noticia-coluna {
+  width: 240px; /* Define a largura da imagem */
+  height: 128px; /* Define a altura da imagem */
+  border-radius: 12px; /* Define as bordas arredondadas da imagem */
+  object-fit: cover; /* Garante que a imagem cubra o espaço definido sem distorção */
+}
+
+.div3 a:nth-child(2) h1 {
+  font-size: 14px;
+  color: #33b869;
+  top: 0; /* Posicionado no topo de div1 */
+  line-height: 2.1;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.div3 a:nth-child(3) h1 {
+  font-size: 18px;
+  color: #2f3134;
+  top: 0; /* Posicionado no topo de div1 */
+  line-height: 1.3;
+  font-weight: bold;
+  width: 230px; /* Ajuste essa largura conforme necessário para que o texto quebre onde você quer */
+  word-wrap: break-word; /* Garante que as palavras serão quebradas conforme a largura definida */
+}
+
+.div3 a:nth-child(4) h1 {
+  font-size: 13px;
+  color: #2f3134;
+  top: 0; /* Posicionado no topo de div1 */
+  line-height: 1.3;
+  width: 230px; /* Ajuste essa largura conforme necessário para que o texto quebre onde você quer */
+  word-wrap: break-word; /* Garante que as palavras serão quebradas conforme a largura definida */
+  margin-top: 8px;
+}
+
+.noticia-cruzeiro {
+  margin-top: 35px;
+}
+
+.noticia-psg {
+  margin-top: 35px;
+}
+
+.noticia-angel {
+  margin-top: 45px;
+}
+
+.noticia-golpe {
+  margin-top: 45px;
+}
+
+.div5 a:nth-child(2) h1 {
+  font-size: 14px;
+  color: #ee9025;
+  top: 0; /* Posicionado no topo de div1 */
+  line-height: 2.1;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
+.div5 a:nth-child(3) h1 {
+  font-size: 18px;
+  color: #2f3134;
+  top: 0; /* Posicionado no topo de div1 */
+  line-height: 1.3;
+  font-weight: bold;
+  width: 260px; /* Ajuste essa largura conforme necessário para que o texto quebre onde você quer */
+  word-wrap: break-word; /* Garante que as palavras serão quebradas conforme a largura definida */
+}
+
+.div5 a:nth-child(4) h1 {
+  font-size: 13px;
+  color: #2f3134;
+  top: 0; /* Posicionado no topo de div1 */
+  line-height: 1.3;
+  width: 230px; /* Ajuste essa largura conforme necessário para que o texto quebre onde você quer */
+  word-wrap: break-word; /* Garante que as palavras serão quebradas conforme a largura definida */
+  margin-top: 8px;
+}
+
+.div5 a:nth-child(5) h1 {
+  font-size: 13px;
+  color: #2f3134;
+  top: 0; /* Posicionado no topo de div1 */
+  line-height: 1.3;
+  width: 230px; /* Ajuste essa largura conforme necessário para que o texto quebre onde você quer */
+  word-wrap: break-word; /* Garante que as palavras serão quebradas conforme a largura definida */
+  margin-top: 8px;
+}
+
+.colunas {
+  display: flex;
+  margin-left: 800px;
+}
